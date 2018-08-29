@@ -1,0 +1,442 @@
+<% include ../partials/header %>
+
+	<!-- FORM WIZARD -->
+	<div class="section-wrapper mg-t-20">
+          <label class="section-title">Please provide your personal information.</label>
+          <p style="color: red" class="mg-b-20 mg-sm-b-40">All fields marked with an asterisk (*) are required.</p>
+
+         <form action="#">
+          <div id="wizard3">
+
+            <h3>Personal Information</h3>
+            <section>
+              <fieldset style="padding-left: 10px;">
+                                <div class="form-group row">
+	                            	<label class="col-md-3 label-control" for="projectinput1">First Name</label>
+		                            <div class="col-md-4">
+		                            	<input type="text" id="projectinput1" class="form-control" placeholder="First Name" name="firstname">
+		                            </div>
+		                        </div>
+		                        <div class="form-group row">
+	                            	<label class="col-md-3 label-control" for="projectinput2">Middle Name</label>
+									<div class="col-md-4">
+	                            		<input type="text" id="projectinput2" class="form-control" placeholder="Middle Name" name="middlename">
+	                            	</div>
+		                        </div>
+		                        <div class="form-group row">
+	                            	<label class="col-md-3 label-control" for="projectinput3">Last Name</label>
+									<div class="col-md-4">
+	                            		<input type="text" id="projectinput3" class="form-control" placeholder="Last Name" name="lastname">
+	                            	</div>
+		                        </div>
+		                        <div class="form-group row">
+		                        	<label class="col-md-3 label-control" for="date1">Date of Birth</label>
+                                    <div class="col-md-4">
+                                         <input type="date" class="form-control" id="date1" >
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+		                        	<label class="col-md-3 label-control" for="projectinput4">Gender</label>
+		                        	<div class="col-md-4">
+			                            <select id="projectinput4" name="gender" class="form-control">
+			                                <option value="none" selected="" disabled="">Unknown</option>
+			                                <option value="male">Male</option>
+			                                <option value="female">Female</option>
+			                            </select>
+		                            </div>
+		                        </div>
+		                        <div class="form-group row">
+		                        	<label class="col-md-3 label-control" for="projectinput5">Marital Status</label>
+		                        	<div class="col-md-4">
+			                            <select id="projectinput5" name="gender" class="form-control">
+			                                <option value="none" selected="" disabled="">Not Specified</option>
+			                                <option value="single">Single</option>
+			                                <option value="married">Married</option>
+			                                <option value="divorced">Divorced</option>
+			                                <option value="seperated">Seperated</option>
+			                                <option value="widow">Widow</option>
+			                                <option value="widower">Widower</option>
+			                            </select>
+		                            </div>
+		                        </div>
+		                        <div class="form-group row">
+	                            	<label class="col-md-3 label-control" for="projectinput6">Email</label>
+									<div class="col-md-4">
+	                            		<input type="email" id="projectinput6" class="form-control" placeholder="Email Address" name="email">
+	                            	</div>
+		                        </div>
+		                        <div class="form-group row">
+	                            	<label class="col-md-3 label-control" for="projectinput7">Contact Number</label>
+									<div class="col-md-4">
+	                            		<input type="number" id="projectinput7" class="form-control" placeholder="Contact Number" name="phonenumber">
+	                            	</div>
+		                        </div>
+		                        <div class="form-group row">
+	                            	<label class="col-md-3 label-control" for="projectinput8">Postal Address</label>
+									<div class="col-md-6">
+	                            		<input type="text" id="projectinput8" class="form-control" placeholder="Postal Address" name="postaladdress">
+	                            	</div>
+		                        </div>
+		                        <div class="form-group row">
+	                            	<label class="col-md-3 label-control" for="projectinput9">Permanent Address</label>
+									<div class="col-md-6">
+	                            		<input type="text" id="projectinput9" class="form-control" placeholder="Permanent Address" name="address">
+	                            	</div>
+		                        </div>
+		                        <div class="form-group row">
+		                        	<label class="col-md-3 label-control" for="projectinput5">Nationality</label>
+		                        	<div class="col-md-4">
+			                            <select id="projectinput5" name="nationality" class="form-control">
+			                                <option value="none" selected="" disabled="">Not Specified</option>
+			                                <option value="single">Nigerian</option>
+			                            </select>
+		                            </div>
+		                        </div>
+		                        <div class="form-group row">
+		                        	<label class="col-md-3 label-control" for="projectinput5">State of Origin</label>
+		                        	<div class="col-md-4">
+			                            <select id="projectinput5" name="stateoforigin" class="form-control">
+			                                <option value="none" selected="" disabled="">Not Specified</option>
+			                                <option value="abia">Abia</option>
+			                                <option value="abia">Adamawa</option>
+			                                <option value="abia">Akwa Ibom</option>
+			                                <option value="abia">Anambra</option>
+			                                <option value="abia">Bauchi</option>
+			                                <option value="abia">Benue</option>
+			                                <option value="abia">Borno</option>
+			                                <option value="abia">Cross River</option>
+			                                <option value="abia">Delta</option>
+			                            </select>
+		                            </div>
+		                        </div>
+		                        <div class="form-group row">
+		                        	<label class="col-md-3 label-control" for="projectinput5">LGA</label>
+		                        	<div class="col-md-4">
+			                            <select id="projectinput5" name="stateoforigin" class="form-control">
+			                                <option value="none" selected="" disabled="">Not Specified</option>
+			                                <option value="abia">Akinyele</option>
+			                                <option value="abia">Ifako Ijaiye</option>
+			                                <option value="abia">Agege</option>
+			                            </select>
+		                            </div>
+		                        </div>
+		                         <div class="col-md-3 col-sm-12">
+                        			<button type="button" class="btn btn-lg btn-block btn-info mb-2" id="type-success">Save</button>
+                    			 </div>
+                        </fieldset>
+            </section>
+
+            <h3>Additional Information</h3>
+            <section>
+            	<label class="section-title">Upload your recent passport photograph. Files are expected to be JPEG format and no larger than 200kb in size.</label>
+                  <fieldset style="padding-left: 10px;">
+                  				  <div class="card-body  my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+                  				  	 <figure class="col-lg-6 col-md-6 col-12" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+								          <a href="../../../app-assets/images/gallery/passports.jpg" itemprop="contentUrl" data-size="480x360">
+								              <img class="img-thumbnail img-fluid" src="../../../app-assets/images/gallery/passports.jpg" itemprop="thumbnail" alt="Image description" />
+								          </a>
+        							 </figure>
+                  				  </div>
+		                          <div class="form-group row">
+										<label class="control-label col-md-3">Upload Passport</label>
+										<div class="col-md-6">
+											<input type="file" class="file-styled-primary">
+										</div>
+										<button class="btn btn-default">Upload</button>
+								  </div>
+				<label class="title" style="padding-bottom: 10px;"><strong>NEXT OF KIN</strong></label><hr> 				  		    <div class="form-group row">
+	                            	<label class="col-md-3 label-control" for="projectinput10">Name</label>
+									<div class="col-md-4">
+	                            		<input type="text" id="projectinput10" class="form-control" placeholder="Name" name="nextofkin[name]">
+	                            	</div>
+		                        </div>
+		                        <div class="form-group row">
+	                            	<label class="col-md-3 label-control" for="projectinput12">Phone Number</label>
+									<div class="col-md-4">
+	                            		<input type="tel" id="projectinput12" class="form-control" placeholder="Phone Number" name="nextofkin[phonenumber]">
+	                            	</div>
+		                        </div>
+		                        <div class="form-group row">
+		                        	<label class="col-md-3 label-control" for="projectinput13">Relationship</label>
+		                        	<div class="col-md-4">
+			                            <select id="projectinput13" name="nextofkin[relationship]" class="form-control">
+			                                <option value="none" selected="" disabled="">Not Specified</option>
+			                                <option value="single">Brother</option>
+			                                <option value="married">Sister</option>
+			                                <option value="divorced">Wife</option>
+			                                <option value="seperated">Husband</option>
+			                                <option value="widow">Son</option>
+			                                <option value="widower">Daughter</option>
+			                                <option value="widower">Others</option>
+			                            </select>
+		                            </div>
+		                        </div>
+		                        <div class="form-group row">
+	                            	<label class="col-md-3 label-control" for="projectinput14">If Others, Specify</label>
+									<div class="col-md-4">
+	                            		<input type="text" id="projectinput14" class="form-control" placeholder="Others" name="nextofkin[relationship]">
+	                            	</div>
+		                        </div>
+		                        <div class="form-group row">
+	                            	<label class="col-md-3 label-control" for="projectinput11">Address</label>
+									<div class="col-md-6">
+	                            		<input type="text" id="projectinput11" class="form-control" placeholder="Address" name="nextofkin[address]">
+	                            	</div>
+		                        </div>
+		                        <div class="col-md-3 col-sm-12">
+                        			<button type="button" class="btn btn-lg btn-block btn-info mb-2" id="type-success">Save</button>
+                    			 </div>
+		                   </fieldset>
+            </section>
+
+            <h3>Occupation</h3>
+            <section>
+               <fieldset style="padding-left: 10px;">
+                                <div class="form-group row">
+	                            	<label class="col-md-3 label-control" for="projectinput1">Occupation/Profession</label>
+		                            <div class="col-md-4">
+		                            	<input type="text" id="projectinput1" class="form-control" placeholder="Occupation" name="occupation">
+		                            </div>
+		                        </div>
+		                        <div class="form-group row">
+	                            	<label class="col-md-3 label-control" for="projectinput2">Annual Income</label>
+									<div class="col-md-4">
+	                            		<input type="number" id="projectinput2" class="form-control" placeholder="Annual Income" name="income">
+	                            	</div>
+		                        </div>
+		                        <div class="form-group row">
+	                            	<label class="col-md-3 label-control" for="projectinput3">Employer</label>
+									<div class="col-md-4">
+	                            		<input type="text" id="projectinput3" class="form-control" placeholder="Employer" name="employer">
+	                            	</div>
+		                        </div>
+		                        <div class="form-group row">
+									<label class="col-md-3 label-control" for="projectinput4">Address of Employer</label>
+									<div class='col-md-6'>
+										<input id="projectinput4" type='text' class="form-control" placeholder="Employer Address" name="employeraddress">
+									</div>
+							    </div>
+							    <div class="col-md-3 col-sm-12">
+                        			<button type="button" class="btn btn-lg btn-block btn-info mb-2" id="type-success">Save</button>
+                    			</div>
+                        </fieldset>
+            </section>
+
+            <h3>House Type</h3>
+            <section>
+             	<fieldset style="padding-left: 10px;" id="chained-set">
+                        <div class="form-group row">
+                        	<label class="col-md-3 label-control">Location</label>
+                        	<div class="col-md-4">
+	                            <select name="region" id="region" class="form-control">
+						        	<option value="" selected="selected">Select Region</option>
+						            <option value="ne">North East</option>
+						            <option value="nw">North West</option>
+						            <option value="nc">North Central</option>
+						            <option value="fct">FCT</option>
+						            <option value="sw">South West</option>
+						            <option value="se">South East</option>
+						            <option value="ss">South South</option>
+						        </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                        	<label class="col-md-3 label-control">State</label>
+                        	<div class="col-md-4">
+								<select name="state" id="state" class="form-control">
+						            <option value=""  selected="selected" data-available-with="">Select State</option>
+						            <option value="ne1" data-available-with="ne">Maiduguri-Borno</option>
+						            <option value="ne1" data-available-with="ne">Damaturu-Yobe</option>
+						            <option value="ne1" data-available-with="ne">Gombe-Gombe</option>
+						            <option value="ne1" data-available-with="ne">Jalingo-Taraba</option>
+						            <option value="ne1" data-available-with="ne">Yola-Adamawa</option>
+						            <option value="ne1" data-available-with="ne">Bauchi-Bauchi</option>
+						            <option value="nw1" data-available-with="nw">Gusau-Zamfara</option>
+						            <option value="nw1" data-available-with="nw">Kwannawa-Sokoto</option>
+						            <option value="nw1" data-available-with="nw">Rigachukum-Kaduna</option>
+						            <option value="nw1" data-available-with="nw">Dutse-Jigawa</option>
+						            <option value="nw1" data-available-with="nw">Katsina</option>
+						            <option value="nw1" data-available-with="nw">Birnin Kebbi-Kebbi</option>
+						            <option value="nc1" data-available-with="nc">Lokoja-Kogi</option>
+						            <option value="nc1" data-available-with="nc">Minna-Niger</option>
+						            <option value="nc1" data-available-with="nc">Makurdi-Benue</option>
+						            <option value="nc1" data-available-with="nc">Ilorin-Kwara</option>
+						            <option value="nc1" data-available-with="nc">Jos-Plateau</option>
+						            <option value="fct1" data-available-with="fct">Gwagwalada-FCT</option>
+						            <option value="sw1" data-available-with="sw">Akure-Ondo</option>
+						            <option value="sw1" data-available-with="sw">Ibadan-Oyo</option>
+						            <option value="sw1" data-available-with="sw">Abeokuta-Ogun</option>
+						            <option value="sw1" data-available-with="sw">Osogbo-Osun</option>
+						            <option value="sw1" data-available-with="sw">Ekiti</option>
+						            <option value="sw1" data-available-with="sw">Lagos</option>
+						            <option value="se1" data-available-with="se">Owerri-Imo</option>
+						            <option value="se1" data-available-with="se">Abakaliki-Ebonyi</option>
+						            <option value="se1" data-available-with="se">Aba-Abia</option>
+						            <option value="se1" data-available-with="se">Awka-Anambra</option>
+						            <option value="se1" data-available-with="se">Ugwuogo Nike-Enugu</option>
+						            <option value="ss1" data-available-with="ss">Uyo-Akwa-Ibom</option>
+						            <option value="ss1" data-available-with="ss">Calabar-Cross-River</option>
+						            <option value="ss1" data-available-with="ss">Benin-Edo</option>
+						            <option value="ss1" data-available-with="ss">Iselle Azagba-Delta</option>
+						            <option value="ss1" data-available-with="ss">Bayelsa</option>
+						            <option value="ss1" data-available-with="ss">Rivers</option>
+						        </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                        	<label class="col-md-3 label-control">House Type</label>
+                        	<div class="col-md-4">
+                        		<select name="house-type" id="house-type" class="form-control">
+						        	<option value="" selected="selected" data-available-with="">Select House-Type</option>
+						            <option value="ne" data-available-with="ne1,nw1,nc1,fct1,sw1,se1,ss1">3-Bedroom Flat in a Block of Semi-Detached Bungalow</option>
+						            <option value="ne" data-available-with="ne1,nw1,nc1,fct1,sw1,se1,ss1">2-Bedroom Flat in a Block of Semi-Detached Bungalow</option>
+						            <option value="nw" data-available-with="ne1,nw1,nc1,fct1,sw1,se1,ss1">1-Bedroom Flat in a Block of Semi-Detached Bungalow</option>
+						            <option value="ss" data-available-with="sw1,se1,ss1">3-Bedroom Flat in a Block of Condomium</option>
+						            <option value="sw" data-available-with="sw1,se1,ss1">2-Bedroom Flat in a Block of Condomium</option>
+						            <option value="ss" data-available-with="sw1,se1,ss1">1-Bedroom Flat in a Block of Condomium</option>
+						        </select>
+                        	</div>
+                        </div>
+                        <div class="form-group row">
+                        	<label class="col-md-3 label-control">Mode of Purchase</label>
+                        	<div class="col-md-4">
+	                            <select id="projectinput15" name="housetype[type]" class="form-control">
+	                                <option value="none" selected="" disabled="">Not Specified</option>
+	                                <option value="">Rent-to-Own</option>
+	                                <option value="">Mortgage</option>
+	                            </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                			<button type="button" class="btn btn-lg btn-block btn-info mb-2" id="type-success">Save</button>
+            			</div>
+                   </fieldset>
+            </section>
+            <% include ../partials/chained %>
+            <h3>Document Uploads</h3>
+            <section>
+               <fieldset style="padding-left: 10px;">
+               					 <div class="form-group row">
+									<label class="control-label col-md-3">Documents</label>
+									<div class="col-md-6">
+										<input type="file" class="file-styled-primary">
+									</div>
+									<button class="btn btn-default">Upload</button>
+								 </div>
+								 <div class="form-group row">
+		                        	<label class="col-md-3 label-control">Document Name</label>
+		                        	<div class="col-md-6">
+			                            <select id="projectinput15" name="document[name]" class="form-control">
+			                                <option value="none" selected="" disabled="">Not Specified</option>
+			                                <option value="">Current Tax Clearance</option>
+			                                <option value="">Means of Identification</option>
+			                                <option value="">Letter of first appoinment(Public Servants)</option>
+			                                <option value="">Letter of recommendation form Mortgage bank</option>
+			                            </select>
+		                            </div>
+                        		 </div>
+                        		 <div class="form-group row">
+                        		 	<label class="col-md-3 label-control">Description</label>
+                        		 	<div class="col-md-6">
+                        		 	<input type="text" name="document[desc]" class="form-control" placeholder="Description">
+                        		 	</div>
+                        		 </div>
+								 <div class="card">
+					             <div class="card-content collapse show">
+					                <div class="card-body">
+					                    <div class="table-responsive">
+					                        <table class="table">
+					                            <thead>
+					                                <tr>
+					                                    <th>S/N</th>
+					                                    <th>Name</th>
+					                                    <th>Description</th>
+					                                    <th>View Document</th>
+					                                </tr>
+					                            </thead>
+					                            <tbody>
+					                                <tr>
+					                                    <th scope="row">1</th>
+					                                    <td>Identity Card</td>
+					                                    <td>My National Identity Card</td>
+					                                    <td><a href="#">view</a></td>
+					                                </tr>
+					                                <tr>
+					                                    <th scope="row">2</th>
+					                                    <td>Tax Clearance</td>
+					                                    <td>My Tax clearance payment slip</td>
+					                                    <td><a href="#">view</a></td>
+					                                </tr>
+					                            </tbody>
+					                        </table>
+					                    </div>
+					                </div>
+					            </div>
+					        </div>
+
+							    <div class="col-md-3 col-sm-12">
+                        			<button type="button" class="btn btn-lg btn-block btn-info mb-2" id="type-success">Save</button>
+                    			</div>
+                        </fieldset>
+            </section>
+
+
+            <h3>Payment Details</h3>
+            <section class="createCard" id="createCard">
+              	<!-- Card start -->
+	<div class="row">
+		<div class="col-12">
+			<div class="card">
+				<div class="card-content">
+					<div class="card-body">
+						<div class="row">
+							<div class="col-xl-6 col-lg-12">
+								<div class='card-wrapper'></div>
+							</div>
+							<div class="col-xl-6 col-lg-12">
+									<fieldset class="mb-1">
+										<h5>Card Number</h5>
+										<div class="form-group">
+											<input type="text" class="form-control card-number" name="number" id="card-number" maxlength="19" placeholder="Card Number">
+										</div>
+									</fieldset>
+									<fieldset class="mb-1">
+										<h5>Card Name</h5>
+										<div class="form-group">
+											<input type="text" class="form-control card-name" name="name" id="card-name" placeholder="Card Holder Name">
+										</div>
+									</fieldset>
+									<div class="row">
+										<div class="col-md-6">
+											<fieldset class="mb-1">
+												<h5>Expiry Date</h5>
+												<div class="form-group">
+													<input type="text" class="form-control card-expiry" name="expiry" id="card-expiry" placeholder="Expiry Date">
+												</div>
+											</fieldset>
+										</div>
+										<div class="col-md-6">
+											<fieldset class="mb-1">
+												<h5>Card Number</h5>
+												<div class="form-group">
+													<input type="text" class="form-control card-cvc" name="cvc" id="card-cvc" maxlength="16" placeholder="CVC">
+												</div>
+											</fieldset>
+										</div>
+									</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- Card end -->
+
+            </section>
+          </div>
+        </form> 
+    </div><!-- section-wrapper -->
+
+<% include ../partials/footer %>
+    

@@ -1,0 +1,113 @@
+	<script type="text/javascript" src="../../js/pace.min.js"></script>
+	<script type="text/javascript" src="../../js/blockui.min.js"></script>
+	<script src="../../js/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="../../js/popper.min.js"></script>
+    <!-- Bootstrap-4 Beta JS -->
+    <script src="../../js/bootstrap.min.js"></script>
+
+    <script src="../../app-assets/form_inputs.js" type="text/javascript"></script>
+    <!-- Theme JS files -->
+	<script type="text/javascript" src="../../app-assets/handlebars.min.js"></script>
+	<script type="text/javascript" src="../../app-assets/alpaca.min.js"></script>
+	<script type="text/javascript" src="../../app-assets/prism.min.js"></script>
+	<script type="text/javascript" src="../../app-assets/uniform.min.js"></script>
+
+	<script type="text/javascript" src="../../app.js"></script>
+	<script type="text/javascript" src="../../app-assets/alpaca_advanced.js"></script>
+	<script type="text/javascript" src="../../app-assets/ripple.min.js"></script>
+
+	<script src="../../app-assets/jquery.cookie/js/jquery.cookie.js"></script>
+    <script src="../../app-assets/jquery.steps/js/jquery.steps.js"></script>
+    <script src="../../app-assets/parsleyjs/js/parsley.js"></script>
+    <script src="../../js/slim.js"></script>
+
+
+    <!-- VENDOR JS -->
+    <script src="../../app-assets/vendors/js/vendors.min.js" type="text/javascript"></script>
+    <script src="../../app-assets/vendors/js/forms/repeater/jquery.repeater.min.js" type="text/javascript"></script>
+    <script src="../../app-assets/vendors/js/gallery/masonry/masonry.pkgd.min.js" type="text/javascript"></script>
+    <script src="../../app-assets/vendors/js/gallery/photo-swipe/photoswipe.min.js" type="text/javascript"></script>
+    <script src="../../app-assets/vendors/js/gallery/photo-swipe/photoswipe-ui-default.min.js" type="text/javascript"></script>
+    <script src="../../app-assets/vendors/js/extensions/toastr.min.js" type="text/javascript"></script>
+    <script src="../../app-assets/vendors/js/forms/extended/typeahead/typeahead.bundle.min.js" type="text/javascript"></script>
+    <script src="../../app-assets/vendors/js/forms/extended/typeahead/bloodhound.min.js" type="text/javascript"></script>
+    <script src="../../app-assets/vendors/js/forms/extended/typeahead/handlebars.js" type="text/javascript"></script>
+    <script src="../../app-assets/vendors/js/forms/extended/inputmask/jquery.inputmask.bundle.min.js" type="text/javascript"></script>
+    <script src="../../app-assets/vendors/js/forms/extended/formatter/formatter.min.js" type="text/javascript"></script>
+    <script src="../../app-assets/vendors/js/forms/extended/maxlength/bootstrap-maxlength.js" type="text/javascript"></script>
+    <script src="../../app-assets/vendors/js/forms/extended/card/jquery.card.js" type="text/javascript"></script>
+    <script src="../../app-assets/vendors/js/extensions/jquery.steps.min.js" type="text/javascript"></script>
+    <script src="../../app-assets/vendors/js/pickers/pickadate/picker.js" type="text/javascript"></script>
+    <script src="../../app-assets/vendors/js/pickers/pickadate/picker.date.js" type="text/javascript"></script>
+    <script src="../../app-assets/vendors/js/pickers/pickadate/picker.time.js" type="text/javascript"></script>
+    <script src="../../app-assets/vendors/js/pickers/pickadate/legacy.js" type="text/javascript"></script>
+    <script src="../../app-assets/vendors/js/pickers/dateTime/moment-with-locales.min.js" type="text/javascript"></script>
+    <script src="../../app-assets/vendors/js/pickers/daterange/daterangepicker.js" type="text/javascript"></script>
+    <script src="../../app-assets/vendors/js/forms/validation/jquery.validate.min.js" type="text/javascript"></script>
+
+    <!-- ROBUST JS -->
+    <!-- BEGIN ROBUST JS-->
+    <script src="../../app-assets/js/core/app-menu.js" type="text/javascript"></script>
+    <script src="../../app-assets/js/core/app.js" type="text/javascript"></script>
+    <script src="../../app-assets/js/scripts/customizer.js" type="text/javascript"></script>
+    <!-- PAGE LEVEL SCRIPT -->
+     <script src="../../app-assets/js/scripts/gallery/photo-swipe/photoswipe-script.js" type="text/javascript"></script>
+    <script src="../../app-assets/js/scripts/extensions/toastr.js" type="text/javascript"></script>
+	   <script src="../../app-assets/js/scripts/pickers/dateTime/pick-a-datetime.js" type="text/javascript"></script>
+    <script src="../../app-assets/js/scripts/forms/wizard-steps.js" type="text/javascript"></script>
+    <script src="../../js/jquery.chainedTo.min.js" charset="utf-8"></script>
+    
+    <script type="text/javascript">
+      $(document).ready(function(){
+        'use strict';
+
+        $('#wizard1').steps({
+          headerTag: 'h3',
+          bodyTag: 'section',
+          autoFocus: true,
+          titleTemplate: '<span class="number">#index#</span> <span class="title">#title#</span>'
+        });
+
+        $('#wizard2').steps({
+          headerTag: 'h3',
+          bodyTag: 'section',
+          autoFocus: true,
+          titleTemplate: '<span class="number">#index#</span> <span class="title">#title#</span>',
+          onStepChanging: function (event, currentIndex, newIndex) {
+            if(currentIndex < newIndex) {
+              // Step 1 form validation
+              if(currentIndex === 0) {
+                var fname = $('#firstname').parsley();
+                var lname = $('#lastname').parsley();
+
+                if(fname.isValid() && lname.isValid()) {
+                  return true;
+                } else {
+                  fname.validate();
+                  lname.validate();
+                }
+              }
+
+              // Step 2 form validation
+              if(currentIndex === 1) {
+                var email = $('#email').parsley();
+                if(email.isValid()) {
+                  return true;
+                } else { email.validate(); }
+              }
+            // Always allow step back to the previous step even if the current step is not valid.
+            } else { return true; }
+          }
+        });
+
+        $('#wizard3').steps({
+          headerTag: 'h3',
+          bodyTag: 'section',
+          autoFocus: true,
+          titleTemplate: '<span class="number">#index#</span> <span class="title">#title#</span>',
+          stepsOrientation: 1
+        });
+
+      });
+    </script>

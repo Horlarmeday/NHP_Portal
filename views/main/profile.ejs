@@ -1,0 +1,88 @@
+<% include ../partials/header %>
+
+<div class="content-header-left col-md-8 col-12 mb-2 breadcrumb-new">
+    <h3 class="content-header-title mb-0 d-inline-block">My Profile</h3>
+    <div class="row breadcrumbs-top d-inline-block">
+      <div class="breadcrumb-wrapper col-12">
+      </div>
+    </div>
+</div>
+<div class="row match-height">
+	<div class="col-md-4">
+		<div class="card-content collapse show">
+			<div class="card-body">
+				<div class="list-group">
+					<a href="/profile" class="list-group-item active">
+						My Details
+					</a>
+					<a href="#" class="list-group-item list-group-item-action">Login History</a>
+					<a href="#" class="list-group-item list-group-item-action">Change Password</a>
+					<a href="#" class="list-group-item list-group-item-action">Payment History</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-8">
+		<div class="card">
+			<div class="card-body">
+				<form class="form">
+					<div class="form-body">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="userinput1"><strong>First Name</strong></label>
+									<input type="text" id="userinput1" class="form-control border-primary" placeholder="Name" name="firstname">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="userinput2"><strong>Last Name</strong></label>
+									<input type="text" id="userinput2" class="form-control border-primary" placeholder="Last Name" name="lastname">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="userinput3"><strong>Address</strong></label>
+									<input type="text" id="userinput3" class="form-control border-primary" placeholder="Address" name="address">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="userinput4"><strong>Phone Number</strong></label>
+									<input type="tel" id="userinput4" class="form-control border-primary" placeholder="Phone Number" name="phone">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="userinput5"><strong>Email Address</strong></label>
+									<input class="form-control border-primary" type="email" placeholder="email" id="userinput5" name="email">
+								</div>
+						    </div>
+						    <div class="col-md-6">
+								<div class="form-group">
+									<label for="userinput6"><strong>Postal Address</strong></label>
+									<input class="form-control border-primary" type="text" placeholder="Postal Address" id="userinput6" name="postal-address">
+								</div>
+						    </div>
+					    </div>
+					</div>
+					<div class="form-actions right">
+						<button type="button" class="btn btn-warning btn-lg mr-1">
+							<i class="ft-x"></i> Cancel
+						</button>
+						<button type="submit" class="btn btn-info btn-lg">
+							<i class="fa fa-check-square-o"></i> Save
+						</button>
+					</div>
+				</form>
+			</div>		
+		</div>		
+	</div>
+
+</div>
+
+<% include ../partials/footer %>

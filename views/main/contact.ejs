@@ -1,0 +1,81 @@
+<% include ../partials/header %>
+	<div class="content-header-left col-md-8 col-12 mb-2 breadcrumb-new">
+	    <h3 class="content-header-title mb-0 d-inline-block">Call Center Information</h3>
+	    <div class="row breadcrumbs-top d-inline-block">
+	      <div class="breadcrumb-wrapper col-12">
+	      </div>
+	    </div>
+    </div>
+	 <div class="row match-height">
+		<div class="col-md-8">
+			<div class="card">
+				<div class="card-content collapse show">
+					<div class="card-body">
+						<form class="form" method="post">
+							<div class="form-body">
+								<h4 class="form-section"><i class="ft-user"></i>Contact Form</h4>					
+									<div class="form-group">
+										<label for="projectinput1">Name</label>
+										<input type="text" id="projectinput1" class="form-control" placeholder="Name" name="name">
+									</div>
+									<div class="form-group">
+										<label for="projectinput3">E-mail Address</label>
+										<input type="email" id="projectinput3" class="form-control" placeholder="E-mail" name="email">
+									</div>
+									<div class="form-group">
+										<label for="companyName">Subject</label>
+										<input type="text" id="companyName" class="form-control" placeholder="+Subject" name="subject">
+									</div>
+									<div class="form-group">
+										<label for="projectinput8">Message</label>
+										<textarea id="projectinput8" rows="7" class="form-control" name="message" placeholder="Message"></textarea>
+									</div>
+							</div>
+							<div class="form-actions">
+								<button type="button" class="btn btn-warning mr-1">
+									<i class="ft-x"></i> Cancel
+								</button>
+								<button type="submit" class="btn btn-info">
+									<i class="fa fa-check-square-o"></i> Save
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-4">
+			<div class="card" style="background-color: #dadee2;">
+				<div class="card-content collapse show">
+					<div class="card-body">
+						<h4><i class="ft-phone"></i> Call us at:</h4>
+						<div>
+							<h6><strong>Sales: +2347098856784</strong></h6>
+							<p>Lines open between 8am and 7pm Monday - Sunday</p>
+						</div>
+						<div>
+							<h6><strong>Technical: +234704885584</strong></h6>
+							<p>Lines open between 8am and 7pm Monday - Sunday</p>
+						</div>
+						<h4 class="header-height"><i class="ft-mail"></i> E-mail us at:</h4>
+						<div>
+							<h6><strong>Sales: support@nhp.gov.ng</strong></h6>
+							<p>We respond to your emails within 15mins</p>
+						</div>
+						<div>
+							<h6><strong>Technical: support@nhp.gov.ng</strong></h6>
+							<p>We respond to your emails within 15mins</p>
+						</div>
+						<h4 class="header-height"><i class="ft-map-pin"></i> Find us at:</h4>
+						<div>
+							<div id="basic-map" class="height-400"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+
+
+<% include ../partials/footer %>

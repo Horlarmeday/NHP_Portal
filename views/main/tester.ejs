@@ -1,0 +1,307 @@
+<% include ../partials/header %>        
+
+<!-- Form wizard with vertical tabs section start -->
+<section id="vertical-tabs">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-content collapse show">
+                    <div class="card-body">
+                        <form action="#" class="vertical-tab-steps wizard-notification">
+                            <!-- Step 1 -->
+                            <div class="card-header">
+			                    <h4 class="card-title">Please provide your personally and contact information.</h4><br>
+			                    <span style="color: red">All fields marked with an asterisk (*) are required.</span>
+			                    <a class="heading-elements-toggle"><i class="ft-ellipsis-h font-medium-3"></i></a>
+                			</div>
+                            <h6>Personal Data</h6>
+                            <fieldset style="padding-top: 30px; padding-left: 70px;">
+                                <div class="form-group row">
+	                            	<label class="col-md-2 label-control" for="projectinput1">First Name</label>
+		                            <div class="col-md-4">
+		                            	<input type="text" id="projectinput1" class="form-control" placeholder="First Name" name="firstname">
+		                            </div>
+		                        </div>
+		                        <div class="form-group row">
+	                            	<label class="col-md-2 label-control" for="projectinput2">Middle Name</label>
+									<div class="col-md-4">
+	                            		<input type="text" id="projectinput2" class="form-control" placeholder="Middle Name" name="middlename">
+	                            	</div>
+		                        </div>
+		                        <div class="form-group row">
+	                            	<label class="col-md-2 label-control" for="projectinput3">Last Name</label>
+									<div class="col-md-4">
+	                            		<input type="text" id="projectinput3" class="form-control" placeholder="Last Name" name="lastname">
+	                            	</div>
+		                        </div>
+		                        <div class="form-group row">
+		                         	<label class="col-md-2 label-control" for="date4">Date of Birth</label>
+                                        <div class="col-md-4">
+                                            <input type="date" class="form-control" id="date4" >
+                                        </div>
+                                </div>
+                                <div class="form-group row">
+		                        	<label class="col-md-2 label-control" for="projectinput4">Gender</label>
+		                        	<div class="col-md-4">
+			                            <select id="projectinput4" name="gender" class="form-control">
+			                                <option value="none" selected="" disabled="">Unknown</option>
+			                                <option value="male">Male</option>
+			                                <option value="female">Female</option>
+			                            </select>
+		                            </div>
+		                        </div>
+		                        <div class="form-group row">
+		                        	<label class="col-md-2 label-control" for="projectinput5">Marital Status</label>
+		                        	<div class="col-md-4">
+			                            <select id="projectinput5" name="gender" class="form-control">
+			                                <option value="none" selected="" disabled="">Not Specified</option>
+			                                <option value="single">Single</option>
+			                                <option value="married">Married</option>
+			                                <option value="divorced">Divorced</option>
+			                                <option value="seperated">Seperated</option>
+			                                <option value="widow">Widow</option>
+			                                <option value="widower">Widower</option>
+			                            </select>
+		                            </div>
+		                        </div>
+		                        <div class="form-group row">
+	                            	<label class="col-md-2 label-control" for="projectinput6">Email</label>
+									<div class="col-md-4">
+	                            		<input type="email" id="projectinput6" class="form-control" placeholder="Email Address" name="email">
+	                            	</div>
+		                        </div>
+		                        <div class="form-group row">
+	                            	<label class="col-md-2 label-control" for="projectinput7">Contact Number</label>
+									<div class="col-md-4">
+	                            		<input type="number" id="projectinput7" class="form-control" placeholder="Contact Number" name="phonenumber">
+	                            	</div>
+		                        </div>
+		                        <div class="form-group row">
+	                            	<label class="col-md-2 label-control" for="projectinput8">Postal Address</label>
+									<div class="col-md-6">
+	                            		<input type="text" id="projectinput8" class="form-control" placeholder="Postal Address" name="postaladdress">
+	                            	</div>
+		                        </div>
+		                        <div class="form-group row">
+	                            	<label class="col-md-2 label-control" for="projectinput9">Permanent Address</label>
+									<div class="col-md-6">
+	                            		<input type="text" id="projectinput9" class="form-control" placeholder="Permanent Address" name="address">
+	                            	</div>
+		                        </div>
+                            </fieldset>
+
+                            <!-- Step 2 -->
+                            <h6>Additional Information</h6>
+                            <fieldset>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="proposalTitle4">Proposal Title :</label>
+                                            <input type="text" class="form-control" id="proposalTitle4" >
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="emailAddress8">Email Address :</label>
+                                            <input type="email" class="form-control" id="emailAddress8" >
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="videoUrl4">Video URL :</label>
+                                            <input type="url" class="form-control" id="videoUrl4" >
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="jobTitle4">Job Title :</label>
+                                            <input type="text" class="form-control" id="jobTitle4" >
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="shortDescription4">Short Description :</label>
+                                            <textarea name="shortDescription" id="shortDescription4" rows="4" class="form-control"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <!-- Step 3 -->
+                            <h6>Occupation</h6>
+                            <fieldset>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="eventName4">Event Name :</label>
+                                            <input type="text" class="form-control" id="eventName4" >
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="eventType4">Event Type :</label>
+                                            <select class="c-select form-control" id="eventType4" data-placeholder="Type to search cities" name="eventType4">
+                                                <option value="Banquet">Banquet</option>
+                                                <option value="Fund Raiser">Fund Raiser</option>
+                                                <option value="Dinner Party">Dinner Party</option>
+                                                <option value="Wedding">Wedding</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="eventLocation4">Event Location :</label>
+                                            <select class="c-select form-control" id="eventLocation4" name="location">
+                                                <option value="">Select City</option>
+                                                <option value="Amsterdam">Amsterdam</option>
+                                                <option value="Berlin">Berlin</option>
+                                                <option value="Frankfurt">Frankfurt</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Event Date - Time :</label>
+                                            <div class='input-group'>
+                                                <input type='text' class="form-control datetime" />
+                                                <span class="input-group-addon">
+                                                    <span class="ft-calendar"></span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="eventStatus4">Event Status :</label>
+                                            <select class="c-select form-control" id="eventStatus4" name="eventStatus">
+                                                <option value="Planning">Planning</option>
+                                                <option value="In Progress">In Progress</option>
+                                                <option value="Finished">Finished</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Requirements :</label>
+                                            <div class="c-inputs-stacked">
+                                                <div class="d-inline-block custom-control custom-checkbox">
+                                                    <input type="checkbox" name="status4" class="custom-control-input" id="staffing4">
+                                                    <label class="custom-control-label" for="staffing4">Staffing</label>
+                                                </div>
+                                                <div class="d-inline-block custom-control custom-checkbox">
+                                                    <input type="checkbox" name="status4" class="custom-control-input" id="catering4">
+                                                    <label class="custom-control-label" for="catering4">Catering</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <!-- Step 4 -->
+                            <h6>House Type</h6>
+                            <fieldset>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="meetingName4">Name of Meeting :</label>
+                                            <input type="text" class="form-control" id="meetingName4" >
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="meetingLocation4">Location :</label>
+                                            <input type="text" class="form-control" id="meetingLocation4" >
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="participants4">Names of Participants</label>
+                                            <textarea name="participants" id="participants4" rows="4" class="form-control"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="decisions4">Decisions Reached</label>
+                                            <textarea name="decisions" id="decisions4" rows="4" class="form-control"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Agenda Items :</label>
+                                            <div class="c-inputs-stacked">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" name="agenda4" class="custom-control-input" id="item41">
+                                                    <label class="custom-control-label" for="item41">1st item</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" name="agenda4" class="custom-control-input" id="item42">
+                                                    <label class="custom-control-label" for="item42">2nd item</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" name="agenda4" class="custom-control-input" id="item43">
+                                                    <label class="custom-control-label" for="item43">3rd item</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" name="agenda4" class="custom-control-input" id="item44">
+                                                    <label class="custom-control-label" for="item44">4th item</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" name="agenda4" class="custom-control-input" id="item45">
+                                                    <label class="custom-control-label" for="item45">5th item</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+
+                            <!-- Step 5 -->
+                            <h6>Payment Details</h6>
+                            <fieldset>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="meetingName4">Name of Meeting :</label>
+                                            <input type="text" class="form-control" id="meetingName4" >
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="meetingLocation4">Location :</label>
+                                            <input type="text" class="form-control" id="meetingLocation4" >
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="participants4">Names of Participants</label>
+                                            <textarea name="participants" id="participants4" rows="4" class="form-control"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="decisions4">Decisions Reached</label>
+                                            <textarea name="decisions" id="decisions4" rows="4" class="form-control"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Agenda Items :</label>
+                                            <div class="c-inputs-stacked">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" name="agenda4" class="custom-control-input" id="item41">
+                                                    <label class="custom-control-label" for="item41">1st item</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" name="agenda4" class="custom-control-input" id="item42">
+                                                    <label class="custom-control-label" for="item42">2nd item</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" name="agenda4" class="custom-control-input" id="item43">
+                                                    <label class="custom-control-label" for="item43">3rd item</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" name="agenda4" class="custom-control-input" id="item44">
+                                                    <label class="custom-control-label" for="item44">4th item</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" name="agenda4" class="custom-control-input" id="item45">
+                                                    <label class="custom-control-label" for="item45">5th item</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Form wizard with vertical tabs section end -->		
+
+<% include ../partials/footer %>        
